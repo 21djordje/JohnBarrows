@@ -1,0 +1,5 @@
+<svg id="Play_Button" data-name="Play Button" xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60">
+  <path id="Stroke" d="M30,0A30,30,0,1,0,60,30,30,30,0,0,0,30,0Zm0,56.421A26.421,26.421,0,1,1,56.421,30,26.421,26.421,0,0,1,30,56.421Z" fill="#fff"/>
+  <circle id="Ellipse" cx="26.421" cy="26.421" r="26.421" transform="translate(3.58 3.579)" opacity="0.297"/>
+  <path id="Arrow" d="M72.53,52.116,55.347,42.2a2.646,2.646,0,0,0-3.967,2.292V64.329a2.646,2.646,0,0,0,3.967,2.292L72.53,56.7a2.646,2.646,0,0,0,0-4.583Z" transform="translate(-29.971 -24.408)" fill="#fff"/>
+</svg>
