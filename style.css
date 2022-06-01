@@ -184,7 +184,8 @@ h6 span {
   display: inline-block;
   border-bottom: 1px solid #ffffff;
   padding-bottom: 30px;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
+  line-height: 0.8;
 }
 
 .hero-text-box h1 span {
@@ -264,8 +265,8 @@ h6 span {
 }
 
 .elevating-conversation h2 {
-  margin-bottom: 40px;
-  line-height: 1.31;
+  margin-bottom: 30px;
+  line-height: 1.33;
 }
 
 .conversation-card {
@@ -330,6 +331,35 @@ h6 span {
   position: relative;
   display: inline-block;
   line-height: 1;
+}
+
+.decorated {
+  position: relative;
+  overflow: hidden;
+}
+
+.decorated:before,
+.decorated:after {
+  background-color: rgba(255, 255, 255, 0.25);
+  content: "";
+  display: inline-block;
+  height: 1px;
+  position: relative;
+  vertical-align: middle;
+  width: 600px;
+  opacity: 1;
+  margin-top: -15px;
+  overflow: hidden;
+}
+
+.decorated:after {
+  left: 0.25em;
+  margin-right: -50%;
+}
+
+.decorated:before {
+  right: 0.25em;
+  margin-left: -50%;
 }
 
 /******************************
@@ -637,9 +667,12 @@ a.card-link:hover .standard-card .card-text {
 /******************************
       Follow Me section
 ******************************/
-.follow-section {
+.follow-section > .container {
   border-top: 0.25px solid rgba(255, 255, 255, 0.25);
   border-bottom: 0.25px solid rgba(255, 255, 255, 0.25);
+}
+
+.follow-content {
   padding-top: 25px;
   padding-bottom: 40px;
 }
@@ -805,6 +838,12 @@ body.modal-open > :not(.modal) {
             RESPONSIVE
 ********************************/
 
+@media (min-width: 1400px) {
+  .hero-text-box {
+    padding-top: 110px;
+  }
+}
+
 @media (max-width: 1399px) {
   .experience-section {
     background-position: center;
@@ -815,6 +854,9 @@ body.modal-open > :not(.modal) {
 }
 
 @media (min-width: 992.1px) and (max-width: 1399px) {
+  .hero-text-box {
+    padding-top: 80px;
+  }
   .elevating-conversation {
     padding-top: 60px;
   }
@@ -865,9 +907,7 @@ body.modal-open > :not(.modal) {
     padding-top: 100px;
     padding-bottom: 100px;
   }
-  .standard-card {
-    margin-bottom: 30px;
-  }
+
   .standard-card:hover {
     transform: none;
   }
@@ -927,6 +967,10 @@ body.modal-open > :not(.modal) {
 
   .featured-section {
     padding-top: 60px;
+  }
+  .decorated:before,
+  .decorated:after {
+    display: none;
   }
 }
 
